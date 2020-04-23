@@ -1,4 +1,5 @@
-paddlepaddle == 1.6.0
+paddlepaddle
+paddlepaddle-gpu
 numpy
 nltk
 tqdm

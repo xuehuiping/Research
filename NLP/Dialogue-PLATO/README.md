@@ -1,3 +1,8 @@
+
+2020-04-23 20:41:03
+
+目前不支持CPU，仅支持GPU，CUDA9.0，paddlepaddle
+
 # PLATO
 **PLATO: Pre-trained Dialogue Generation Model with Discrete Latent Variable**
 [paper link](http://arxiv.org/abs/1910.07931)

@@ -121,3 +121,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.gz
+.idea/*
+.idea/
+data/
+outputs/
+model/
+model-baseline/

@@ -105,6 +105,8 @@ def main():
         place = fluid.CUDAPlace(parallel.Env().dev_id)
     else:
         place = fluid.CUDAPlace(0)
+        # place = fluid.CPUPlace()
+        # 改了也没用，不支持CPU 2020-04-23 20:50:39
 
     with fluid.dygraph.guard(place):
         # Construct Model

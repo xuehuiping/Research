@@ -37,15 +37,19 @@ GPU机器，应该选择ubuntu18.04或者16.04，cuda9.0
 
 ## 数据集
 
-process.py
+process.py 
 
-process.py 将原始文件train、valid、test转化为jsonl文件。
-每行文件的格式是：src、knowledge、tgt
+将原始文件`train、valid、test`转化为`jsonl`文件。
+
+每行文件的格式是：`src、knowledge、tgt`
 
 原始数据：
+```
 a person_2054 is watching a video on a laptop __eou__ the person_2054 begins eating a cookie , then places the laptop on a shelf __eou__ the man is sitting at the table looking at the laptop __eou__ he stands up puts the laptop up	what is happening in the video ?	the man is sitting at the table looking at the laptop . he stands up puts the laptop up .
+```
 
 转化之后：
+```json
 {
 	"src": [
 		[2054, 2003, 6230, 1999, 1996, 2678, 1029, 2]
@@ -58,6 +62,7 @@ a person_2054 is watching a video on a laptop __eou__ the person_2054 begins eat
 	],
 	"tgt": [1, 1996, 2158, 2003, 3564, 2012, 1996, 2795, 2559, 2012, 1996, 12191, 1012, 2002, 4832, 2039, 8509, 1996, 12191, 2039, 1012, 2]
 }
+```
 
 ### 
 2020-04-23 15:32:42
